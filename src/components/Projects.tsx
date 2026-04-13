@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 import { ExternalLink, ArrowUpRight } from 'lucide-react';
-import { projects } from '../data/projects';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/card';
-import { Badge } from './ui/badge';
+import { projects } from '@/data/projects';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 
 export default function Projects() {
   return (
