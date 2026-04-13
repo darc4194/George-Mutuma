@@ -23,7 +23,7 @@ export default function Skills() {
               transition={{ delay: i * 0.05 }}
             >
               <Tooltip>
-                <TooltipTrigger asChild>
+                <TooltipTrigger>
                   <div className="group relative flex flex-col items-center justify-center p-8 bg-zinc-900/50 border border-zinc-800 rounded-2xl hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all duration-300 cursor-default">
                     <tech.icon className={`w-10 h-10 ${tech.color} group-hover:scale-110 transition-transform duration-300`} />
                     <span className="mt-4 text-xs font-bold uppercase tracking-widest text-zinc-500 group-hover:text-zinc-300 transition-colors">
