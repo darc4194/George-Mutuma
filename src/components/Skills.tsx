@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
-import { technologies } from '@/data/projects';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { technologies } from '../data/projects';
+import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip';
 
 export default function Skills() {
   return (

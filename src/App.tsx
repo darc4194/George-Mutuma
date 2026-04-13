@@ -5,15 +5,15 @@
 
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring, AnimatePresence } from "motion/react";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import CustomCursor from "@/components/CustomCursor";
-import Preloader from "@/components/Preloader";
+import { TooltipProvider } from "./components/ui/tooltip";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import CustomCursor from "./components/CustomCursor";
+import Preloader from "./components/Preloader";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
