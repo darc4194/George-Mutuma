@@ -8,7 +8,13 @@ export default function Projects() {
   return (
     <section id="projects" className="py-32 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16"
+        >
           <div>
             <h2 className="text-sm font-bold text-emerald-500 uppercase tracking-[0.2em] mb-4">Selected Works</h2>
             <h3 className="text-4xl md:text-6xl font-black tracking-tighter">
@@ -19,16 +25,20 @@ export default function Projects() {
           <p className="text-zinc-400 max-w-md text-lg">
             A collection of projects that demonstrate my technical expertise and commitment to quality.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ 
+                duration: 0.8, 
+                delay: i * 0.1,
+                ease: [0.21, 0.47, 0.32, 0.98]
+              }}
             >
               <Card className="group bg-zinc-900/50 border-zinc-800 overflow-hidden hover:border-emerald-500/50 transition-all duration-500">
                 <div className="relative aspect-video overflow-hidden">
